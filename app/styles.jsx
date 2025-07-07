@@ -6,6 +6,7 @@ const secondary = "#109648";
 const secondaryLight = "#18A999";
 const accent = "#8AF3FF";
 const backgroundPrimary = "#FFFFFF";
+// const backgroundLight = "#18A999";
 
 const AppStyles = StyleSheet.create({
     body: {
