@@ -1,20 +1,43 @@
+import { MuseoModerno_400Regular } from '@expo-google-fonts/museomoderno/400Regular';
 import { StyleSheet } from "react-native";
 
-const primary = "#763AD5";
-const primaryLight = "#B596E8";
-const secondary = "#109648";
-const secondaryLight = "#18A999";
-const accent = "#8AF3FF";
-const backgroundPrimary = "#FFFFFF";
+export const primary = "#763AD5";
+export const primaryLight = "#B596E8";
+export const secondary = "#109648";
+export const secondaryLight = "#18A999";
+export const accent = "#8AF3FF";
+export const backgroundPrimary = "#FFFFFF";
 // const backgroundLight = "#18A999";
+export const primaryFont = "#172A3A";
+export const secondaryFamily = MuseoModerno_400Regular;
 
-const AppStyles = StyleSheet.create({
+export default AppStyles = StyleSheet.create({
     body: {
         backgroundColor: primary,
         height: "100vh",
     },
-    projectList: {
-        listStyle: "disc",
+
+    // NAV
+    navImageContainer: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "flex-start",
+        flexDirection: "row",
+    },
+    navLogo: {
+        maxHeight: 60,
+        width: 60,
+        height: 60,
+        borderRadius: "50%",
+    },
+    navTitle: {
+        color: primaryFont,
+        fontSize: 36,
+        fontFamily: secondaryFamily,
+    },
+
+    // PROJECT LIST
+    projectListItem: {
         color: accent,
     },
 
@@ -30,5 +53,3 @@ const AppStyles = StyleSheet.create({
         color: primary,
     },
 });
-
-export default AppStyles;

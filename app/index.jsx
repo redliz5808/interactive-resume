@@ -1,5 +1,4 @@
 import AppStyles from "@/app/styles";
-import Nav from "@/components/Nav";
 import ProjectList from "@/components/ProjectList";
 import { Text, View } from "react-native";
 
@@ -8,8 +7,6 @@ const Index = () => {
     <View
       style={AppStyles.body}
     >
-      {/* NAV */}
-      <Nav />
 
       {/* BODY */}
       <Text>Hi-Dee Ho!</Text>

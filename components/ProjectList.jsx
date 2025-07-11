@@ -1,12 +1,24 @@
 import AppStyles from "@/app/styles";
-import { FlatList, Text } from "react-native";
+import { FlatList, Text, View } from "react-native";
 
 const ProjectList = () => {
     return (
-        <FlatList style={AppStyles.projectList}>
-            <Text>Item 1</Text>
-            <Text>Item 2</Text>
-        </FlatList>
+        <View>
+            <Text>List should show below</Text>
+            <FlatList
+                data={[
+                    {
+                        id: 1,
+                        text: "Item 1"
+                    },
+                    {
+                        id: 2,
+                        text: "Item 2"
+                    },
+                ]}
+                renderItem={({ item }) => <Text style={AppStyles.projectListItem} >{item.text}</Text>}
+            />
+        </View>
     );
 }
 
